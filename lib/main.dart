@@ -42,7 +42,7 @@ class BusnessCardApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Divider( 
+              Divider(
                 thickness: 0.6,
                 height: 10,
                 color: Colors.grey,
@@ -90,47 +90,65 @@ class BusnessCardApp extends StatelessWidget {
                   ),
                 ),
               ),
-
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(12),
+              Card(
+                
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+                margin: EdgeInsets.symmetric(horizontal: 16),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    size: 32,
+                    color: Color(0xFF274460),
                   ),
-                  height: 65,
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(
-                          left: 11,
-                        ),
-                        child: Icon(
-                          Icons.mail,
-                          size: 32,
-                          color: Color(0xFF274460),
-                        ),
-                      ),
-
-                      Padding(
-                        padding: EdgeInsets.only(
-                          left: 11,
-                        ),
-                        child: Text(
-                          'zahra@gmail.com',
-                          style: TextStyle(
-                            color: Color(0xFF274460),
-                            fontSize: 22,
-                          ),
-                        ),
-                      ),
-                      // Spacer(
-                      //   flex: 3,
-                      // ),
-                    ],
+                  title: Text(
+                    'zahra@gmail.com',
+                    style: TextStyle(
+                      color: Color(0xFF274460),
+                      fontSize: 22,
+                    ),
                   ),
                 ),
-              )
+              ),
+              // Container(
+              //   margin: EdgeInsets.symmetric(horizontal: 16),
+              //   decoration: BoxDecoration(
+              //     color: Colors.white,
+              //     borderRadius: BorderRadius.circular(12),
+              //   ),
+              //   height: 65,
+              //   child: Row(
+              //     children: [
+              //       Padding(
+              //         padding: EdgeInsets.only(
+              //           left: 11,
+              //         ),
+              //         child: Icon(
+              //           Icons.mail,
+              //           size: 32,
+              //           color: Color(0xFF274460),
+              //         ),
+              //       ),
+
+              //       Padding(
+              //         padding: EdgeInsets.only(
+              //           left: 11,
+              //         ),
+              //         child: Text(
+              //           'zahra@gmail.com',
+              //           style: TextStyle(
+              //             color: Color(0xFF274460),
+              //             fontSize: 22,
+              //           ),
+              //         ),
+              //       ),
+              //       // Spacer(
+              //       //   flex: 3,
+              //       // ),
+              //     ],
+              //   ),
+              // ),
 
               // Container(
               //   child: Row(children: [Text('data')]),
