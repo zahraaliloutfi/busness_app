@@ -42,7 +42,7 @@ class BusnessCardApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Divider(
+              Divider( 
                 thickness: 0.6,
                 height: 10,
                 color: Colors.grey,
