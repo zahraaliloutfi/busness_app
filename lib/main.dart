@@ -12,14 +12,15 @@ class BusnessCardApp extends StatelessWidget {
         backgroundColor: Color(0xFF274460),
         body: Center(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 102,
+                radius: 92,
                 backgroundColor: Colors.white,
                 child: CircleAvatar(
                   backgroundColor: Colors.white,
-                  radius: 100,
+                  radius: 90,
                   backgroundImage: AssetImage('images/busness.png'),
                 ),
               ),
@@ -33,7 +34,6 @@ class BusnessCardApp extends StatelessWidget {
                   fontFamily: 'Pacifico',
                 ),
               ),
-
               Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
@@ -42,8 +42,20 @@ class BusnessCardApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              Divider(
+                thickness: 0.6,
+                height: 10,
+                color: Colors.grey,
+                indent: 40,
+                endIndent: 40,
+              ),
               Padding(
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.only(
+                  left: 16,
+                  right: 16,
+                  bottom: 16,
+                  top: 2,
+                ),
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
