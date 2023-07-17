@@ -53,7 +53,7 @@ class BusnessCardApp extends StatelessWidget {
                 padding: EdgeInsets.only(
                   left: 16,
                   right: 16,
-                  bottom: 16,
+                  bottom: 10,
                   top: 2,
                 ),
                 child: Container(
@@ -61,7 +61,7 @@ class BusnessCardApp extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  height: 65,
+                  height: 58,
                   child: Row(
                     children: [
                       Padding(
@@ -90,23 +90,27 @@ class BusnessCardApp extends StatelessWidget {
                   ),
                 ),
               ),
-              Card(
-                
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
-                margin: EdgeInsets.symmetric(horizontal: 16),
-                color: Colors.white,
-                child: ListTile(
-                  leading: Icon(
-                    Icons.mail,
-                    size: 32,
-                    color: Color(0xFF274460),
-                  ),
-                  title: Text(
-                    'zahra@gmail.com',
-                    style: TextStyle(
-                      color: Color(0xFF274460),
-                      fontSize: 22,
+              SizedBox(
+                height: 65,
+                child: Center(
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    margin: EdgeInsets.symmetric(horizontal: 16),
+                    color: Colors.white,
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.mail,
+                        size: 32,
+                        color: Color(0xFF274460),
+                      ),
+                      title: Text(
+                        'zahra@gmail.com',
+                        style: TextStyle(
+                          color: Color(0xFF274460),
+                          fontSize: 22,
+                        ),
+                      ),
                     ),
                   ),
                 ),
